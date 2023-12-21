@@ -58,8 +58,25 @@ while IsValidName(street_str) is False:
     adress_book['last_name'] = str(input("Podaj samą ulicę, bez numeru domu/mieszkania: "))
     street_str = adress_book['last_name']
 
+# sortowanie wprowadzonych danych
+column_name = list(adress_book.keys())
+sorted_question = str(input("Podaj zmienną po której chcesz posortować dane: " + str(column_name) + ": "))
+
+if sorted_question == 'name':
+    adress_book.sort_values('name')
+if sorted_question == 'last_name':
+    print("l")
+if sorted_question == 'age':
+    print("a")
+if sorted_question == 'street':
+    print("s")
+
+
+
+
 # zapisanie książki adresowej do pliku txt
-save_path = 'E:\Programowanie\Projekty\zapisane rzeczy z projektów'
+
+save_path = 'E:\\Programowanie\\Projekty\\zapisane_rzeczy_z_projektów'
 name_of_file = str(input("What is the name of the file: "))
 completeName = os.path.join(save_path, name_of_file+".txt")
 file = open(completeName, "w")
