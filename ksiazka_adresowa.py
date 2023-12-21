@@ -59,19 +59,21 @@ while IsValidName(street_str) is False:
     street_str = adress_book['last_name']
 
 # sortowanie wprowadzonych danych
-column_name = list(adress_book.keys())
-sorted_question = str(input("Podaj zmienną po której chcesz posortować dane: " + str(column_name) + ": "))
-
-if sorted_question == 'name':
-    adress_book.sort_values('name')
-if sorted_question == 'last_name':
-    print("l")
-if sorted_question == 'age':
-    print("a")
-if sorted_question == 'street':
-    print("s")
-
-
+adress_book_df = pd.DataFrame.from_dict(adress_book, orient='index')
+adress_book_df_Trans = adress_book_df.T
+print(adress_book_df_Trans)
+# column_name = list(adress_book.keys())
+# print(column_name)
+# sorted_question = str(input("Podaj zmienną po której chcesz posortować dane: " + str(column_name) + ": "))
+#
+# if sorted_question == 'name':
+#     adress_book.sort_values(by=['name'])
+# if sorted_question == 'last_name':
+#     print("l")
+# if sorted_question == 'age':
+#     print("a")
+# if sorted_question == 'street':
+#     print("s")
 
 
 # zapisanie książki adresowej do pliku txt
