@@ -5,7 +5,7 @@ from datetime import date
 import os
 
 
-file_path = 'E:\\Programowanie\\Projekty\\zapisane_rzeczy_z_projektów\\complaint_data.csv'
+file_path = 'E:\\Programowanie\\Projekty\\data\\complaint_data.csv'
 
 # Check if the file exists
 if os.path.exists(file_path):

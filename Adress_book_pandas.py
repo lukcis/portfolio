@@ -72,5 +72,5 @@ while sorted_question != 'True':
 
 
 # Save to csv
-save_path = 'E:\\Programowanie\\Projekty\\zapisane_rzeczy_z_projektów\\adress_book_data.csv'
+save_path = 'E:\\Programowanie\\Projekty\\data\\adress_book_data.csv'
 adress_book_df.to_csv(save_path, index=False)

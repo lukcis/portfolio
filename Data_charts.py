@@ -6,7 +6,7 @@ import numpy as np
 
 # Total Investment by Continent and Year
 
-path_file = "E:\\Programowanie\\Projekty\\pliki_uzyte_do_projektow\\"
+path_file = "E:\\Programowanie\\Projekty\\data\\"
 
 countries = pd.read_csv(path_file + "countries.csv")
 economies = pd.read_csv(path_file + "economies.csv")
@@ -29,7 +29,7 @@ plt.show()
 
 # Sum of Profit by Year
 
-coffee_data = pd.read_csv("E:\\Programowanie\\Coffee Chain.csv")
+coffee_data = pd.read_csv("E:\\Programowanie\\Projekty\\data\\Coffee Chain.csv")
 
 coffee_data_df = pd.DataFrame(data=coffee_data)
 
